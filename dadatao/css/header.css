@@ -1,0 +1,447 @@
+@charset "UTF-8";
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, button, fieldset, textarea, option, li, ul, a {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #333;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+a, input {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+}
+
+i, em {
+  font-style: normal;
+}
+
+body {
+  font: 12px "微软雅黑";
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.topbg {
+  width: 100%;
+  height: 36px;
+  background: #f2f2f2;
+  border-bottom: 1px solid #e2e2e2;
+}
+.topbg .top {
+  width: 1189px;
+  height: 36px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 36px;
+  color: #888888;
+}
+.topbg .top .fl a {
+  color: #c60a0a;
+  margin-right: 16px;
+  margin-left: 4px;
+  text-decoration: none;
+}
+.topbg .top .fl .topcolor {
+  color: #888888;
+}
+.topbg .top .fr a {
+  margin-left: 24px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.tel {
+  background: url(../img/icons.png) -183px 2px no-repeat;
+  line-height: 12px;
+  width: 142px;
+  font-size: 14px;
+}
+
+.tel p {
+  color: #c60a0a;
+  font-weight: 600;
+  line-height: 36px;
+  margin-left: 28px;
+}
+
+.onlineserve {
+  line-height: 12px;
+  margin-top: 12px;
+  margin-left: 17px;
+  background: url(../img/up-1.png) no-repeat;
+}
+
+.headermiddle {
+  width: 100%;
+  height: 125px;
+}
+.headermiddle .hmcon {
+  width: 1189px;
+  height: 125px;
+  margin: 0 auto;
+}
+.headermiddle .hmcon img {
+  margin-top: 21px;
+  margin-right: 112px;
+  cursor: pointer;
+}
+.headermiddle .hmcon .searchin {
+  display: inline-block;
+}
+.headermiddle .hmcon .searchin input {
+  padding-left: 13px;
+  float: left;
+  width: 410px;
+  height: 42px;
+  border: 2px solid #c60a0a;
+  margin-top: 40px;
+  font-size: 12px;
+}
+.headermiddle .hmcon .searchin .btn {
+  display: inline-block;
+  float: left;
+  margin-top: 40px;
+  width: 92px;
+  height: 46px;
+  cursor: pointer;
+  background: #c60a0a url(../img/select-1.png) 26px 0 no-repeat;
+}
+.headermiddle .hmcon button {
+  font-size: 14px;
+  padding-left: 20px;
+  width: 142px;
+  height: 37px;
+  border: 1px solid #eaeaea;
+  margin-top: 40px;
+  float: right;
+  background: url(../img/shops.png) 6px 4px no-repeat;
+  cursor: pointer;
+}
+
+.headerbottom {
+  width: 100%;
+  height: 40px;
+  background: #c60a0a;
+}
+.headerbottom .nav {
+  margin: 0 auto;
+  width: 1189px;
+  height: 40px;
+}
+.headerbottom .nav ul {
+  float: left;
+}
+.headerbottom .nav ul li {
+  float: left;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 8px 30px 11px 30px;
+  font-weight: 600;
+}
+.headerbottom .nav ul li a {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+}
+.headerbottom .nav ul .hov:hover {
+  background: #3a3a3a;
+}
+.headerbottom .nav ul .sort {
+  background: url(../img/cls.png) 0 -3px repeat-y;
+  margin-left: 40px;
+  margin-top: 8px;
+  padding: 0 30px 0 30px;
+  padding-left: 36px;
+}
+.headerbottom .nav .signin {
+  float: right;
+  width: 130px;
+  height: 29px;
+  padding-top: 6px;
+  margin: 2px 4px 0 0;
+  color: #e6a900;
+  background: white;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.headerbottom .nav .signin .signcon {
+  position: relative;
+  z-index: 99;
+  background: white;
+  cursor: default;
+  display: none;
+  width: 461px;
+  height: 395px;
+  float: right;
+  margin-top: 10px;
+}
+.headerbottom .nav .signin .signcon .sctop {
+  height: 140px;
+  background: #50a3f8;
+  background-image: url(../img/you-1.png);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+.headerbottom .nav .signin .signcon .sctop .sctleft {
+  width: 282px;
+  float: left;
+}
+.headerbottom .nav .signin .signcon .sctop .sctleft img {
+  float: left;
+  margin: 14px 0 0 9px;
+}
+.headerbottom .nav .signin .signcon .sctop .sctleft .fl {
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.headerbottom .nav .signin .signcon .sctop .sctleft .fl .sctlsp1 {
+  text-align: left;
+  display: block;
+  font-size: 12px;
+  color: #ffed44;
+}
+.headerbottom .nav .signin .signcon .sctop .sctleft .fl .sctlsp1 span {
+  font-size: 32px;
+  color: #ffed44;
+}
+.headerbottom .nav .signin .signcon .sctop .sctleft .fl .sctlsp2 {
+  text-align: left;
+  display: block;
+  margin: 12px 0;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.headerbottom .nav .signin .signcon .sctop .sctleft .fl .sctlsp3 {
+  text-align: left;
+  display: block;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.headerbottom .nav .signin .signcon .sctop .sctright {
+  float: right;
+}
+.headerbottom .nav .signin .signcon .sctop .sctright .sctrbtn {
+  cursor: pointer;
+  margin-top: 35px;
+  margin-right: 10px;
+  color: #e6a900;
+  width: 158px;
+  line-height: 58px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 6px 2px #795000;
+}
+.headerbottom .nav .signin .signcon .scmiddle {
+  margin-top: 13px;
+  width: 457px;
+  height: 242px;
+  border: 2px solid #50a3f8;
+  border-top: 1px solid #f2f8fe;
+}
+.headerbottom .nav .signin .signcon .scmiddle img {
+  float: left;
+  cursor: pointer;
+}
+.headerbottom .nav .signin .signcon .scmiddle .scmbottom li {
+  cursor: pointer;
+  float: left;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-right: 10px;
+  width: 95px;
+  height: 30px;
+  border-right: 1px solid #eeeeee;
+}
+.headerbottom .nav .signin .signcon .scmiddle .scmbottom li a {
+  font-size: 12px;
+  color: #000000;
+}
+.headerbottom .nav .signin .signcon .scmiddle .scmbottom li a span {
+  color: #000000;
+  font-size: 12px;
+  display: block;
+}
+.headerbottom .nav .signin .signcon .scmiddle .scmbottom .scmb1 {
+  background: url(../img/Tears1.png) 0 1px no-repeat;
+}
+.headerbottom .nav .signin .signcon .scmiddle .scmbottom .scmb2 {
+  background: url(../img/Tears1.png) 0 -76px no-repeat;
+}
+.headerbottom .nav .signin .signcon .scmiddle .scmbottom .scmb3 {
+  border: none;
+  background: url(../img/Tears1.png) 0 -153px no-repeat;
+}
+.headerbottom .nav .signin:hover .signcon {
+  display: block;
+}
+
+.fixbox {
+  position: fixed;
+  right: 0;
+  top: 315px;
+  width: 60px;
+  height: 218px;
+}
+.fixbox .qq {
+  width: 60px;
+  height: 60px;
+  background: url(../img/s-qq.png) 20px 17px no-repeat;
+  background-color: #333333;
+  cursor: pointer;
+}
+.fixbox .qq .qqhelp {
+  display: none;
+  cursor: default;
+  position: absolute;
+  left: -180px;
+  top: -14px;
+  width: 174px;
+  height: 318px;
+}
+.fixbox .qq .qqhelp .qqhelptop {
+  height: 49px;
+  background: #d91212;
+  font-size: 22px;
+  line-height: 48px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}
+.fixbox .qq .qqhelp .qqhelptop .delqqhelp {
+  position: absolute;
+  right: 8px;
+  top: 7px;
+  width: 19px;
+  line-height: 22px;
+  color: #d91212;
+  background: #333333;
+  cursor: pointer;
+}
+.fixbox .qq .qqhelp .qqhelpcontent {
+  background: #feeede;
+}
+.fixbox .qq .qqhelp .qqhelpcontent ul {
+  width: 146px;
+  height: 250px;
+  padding: 10px 15px;
+}
+.fixbox .qq .qqhelp .qqhelpcontent ul li {
+  height: 68px;
+  background: white;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px dashed #d91212;
+  line-height: 30px;
+  cursor: pointer;
+}
+.fixbox .qq .qqhelp .qqhelpcontent ul li img {
+  width: 20px;
+  height: 23px;
+}
+.fixbox .qq .qqhelp .qqhelpcontent ul .qhchead {
+  font-size: 13px;
+  color: #d91212;
+  height: 40px;
+  line-height: 40px;
+  cursor: default;
+}
+.fixbox .qq .qqhelp .qqhelpcontent ul .nobord {
+  border: none;
+}
+.fixbox .newcustomer {
+  width: 60px;
+  height: 60px;
+  margin-top: 4px;
+  background: url(../img/icons.png) -70px -11px no-repeat;
+  background-color: #333333;
+}
+.fixbox .newcustomer .hovcus {
+  width: 26px;
+  height: 30px;
+  background: #ff6c00;
+  display: none;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 17px;
+  cursor: pointer;
+}
+.fixbox .newcustomer:hover .hovcus {
+  display: block;
+}
+.fixbox .newstore {
+  width: 60px;
+  height: 60px;
+  margin-top: 4px;
+  background: url(../img/icons.png) 0px -15px no-repeat;
+  background-color: #333333;
+}
+.fixbox .newstore .hovsto {
+  width: 26px;
+  height: 30px;
+  background: #ff6c00;
+  display: none;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 17px;
+  cursor: pointer;
+}
+.fixbox .newstore:hover .hovsto {
+  display: block;
+}
+.fixbox .backtop {
+  width: 60px;
+  line-height: 26px;
+  margin-top: 4px;
+  font-size: 12px;
+  padding: 0 8px;
+  color: white;
+  background: #333333;
+  cursor: pointer;
+}

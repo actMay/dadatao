@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script src="../js/require.js" data-main="../js/register"></script>
+	</head>
+	<body>
+		<div class="headbg">
+			<div class="head">
+				<a href="index.html"><img src="../img/20161206025935862.jpg"/></a>
+				<h2>注册会员</h2>
+				<p>已有账户，<a href="login.html" class="login">马上登录</a><a href="#" class="regis">注册</a></p>
+			</div>
+		</div>
+		<div class="regcontent">
+			<ul>
+				<li>
+					<span>手机号码:</span><input type="text" placeholder="用于登录账号以及找回你的密码" pass="false" pattern="tel"/>
+				</li>
+				<li>
+					<span>QQ或微信:</span><input type="text" pass="false" pattern="mail"/>
+				</li>
+				<li>
+					<span>密码:</span><input type="text" pass="false" pattern="password"/><span class="error" style="color: black;">密码6-20位</span>
+				</li>
+				<li>
+					<span>确认密码:</span><input type="text"/>
+				</li>
+				<li>
+					<span style="color: red;">最想推荐的人:</span><input type="text" placeholder="请填写您最想推荐的朋友的手机号" pass="false" pattern="friendtel"/><span style="color: red;">正确填写奖励五百积分=免费体现五次=送朋友一份小礼物</span>
+				</li>
+				
+			</ul>
+			<span class="margintop">来源:</span>
+			<select value="注册来源">
+				<option>注册来源</option>
+				<option>请选择</option>
+				<option>其他网站</option>
+				<option>360搜索</option>
+				<option>搜狗搜索</option>
+				<option>百度搜索</option>
+				<option>问答【百度知道、百度文库、百度经验】</option>
+				<option>QQ控件、微博、微信等分享</option>
+				<option>其他</option>
+			</select>
+			<div class="ck">
+				<input type="checkbox" checked="checked" class="check"/><span class="fl">同意《大大淘服务协议》</span>
+			</div>
+			<div class="regbtn">确定</div>
+		</div>
+		<p class="owner">四川哒哒淘网络科技有限公司Copyright&copy www.dadatao.com 版权所有<span>蜀ICP备16031680号-1</span></p>
+	</body>
+</html>

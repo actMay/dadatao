@@ -1,0 +1,574 @@
+@charset "UTF-8";
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, button, fieldset, textarea, option, li, ul, a {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #333;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+a, input {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+}
+
+i, em {
+  font-style: normal;
+}
+
+body {
+  font: 12px "微软雅黑";
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.bannerbg {
+  height: 380px;
+  width: 100%;
+}
+.bannerbg .bannercontent {
+  width: 1189px;
+  height: 380px;
+  margin: 0 auto;
+  position: relative;
+}
+.bannerbg .bannercontent .sort {
+  width: 200px;
+  height: 380px;
+  float: left;
+}
+.bannerbg .bannercontent .sort li {
+  padding: 13px 0 10px 82px;
+  width: 118px;
+}
+.bannerbg .bannercontent .sort li:nth-of-type(1) {
+  background: url(../img/homeIcon2.png) 52px 10px no-repeat;
+  background-color: #edeef0;
+}
+.bannerbg .bannercontent .sort li:nth-of-type(2) {
+  background: url(../img/homeIcon2.png) 52px -26px no-repeat;
+  background-color: #edeef0;
+}
+.bannerbg .bannercontent .sort li:nth-of-type(3) {
+  background: url(../img/homeIcon2.png) 52px -62px no-repeat;
+  background-color: #edeef0;
+}
+.bannerbg .bannercontent .sort li:nth-of-type(4) {
+  background: url(../img/homeIcon2.png) 52px -96px no-repeat;
+  background-color: #edeef0;
+}
+.bannerbg .bannercontent .sort li:nth-of-type(5) {
+  background: url(../img/homeIcon2.png) 52px -132px no-repeat;
+  background-color: #edeef0;
+}
+.bannerbg .bannercontent .sort li:nth-of-type(6) {
+  background: url(../img/homeIcon2.png) 52px -168px no-repeat;
+  background-color: #edeef0;
+}
+.bannerbg .bannercontent .sort li:nth-of-type(7) {
+  background: url(../img/homeIcon2.png) 52px -198px no-repeat;
+  background-color: #edeef0;
+}
+.bannerbg .bannercontent .sort li:nth-of-type(8) {
+  background: url(../img/homeIcon2.png) 52px -240px no-repeat;
+  background-color: #edeef0;
+}
+.bannerbg .bannercontent .sort li:nth-of-type(9) {
+  background: url(../img/homeIcon2.png) 52px -277px no-repeat;
+  background-color: #edeef0;
+}
+.bannerbg .bannercontent .sort a {
+  font-size: 14px;
+}
+.bannerbg .bannercontent .sort li:hover {
+  background-color: white;
+  margin-left: 10px;
+}
+.bannerbg .bannercontent .notice {
+  width: 206px;
+  height: 368px;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  background: #FFFFFF;
+}
+.bannerbg .bannercontent .notice .noticehead {
+  width: 194px;
+  height: 37px;
+  background: #424243;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 36px;
+  padding-left: 12px;
+}
+.bannerbg .bannercontent .notice .noticetop {
+  height: 78px;
+  width: 196px;
+  border-bottom: 1px dashed #eaeaeb;
+  color: #6b6b6c;
+  line-height: 24px;
+  padding-left: 10px;
+}
+.bannerbg .bannercontent .notice .noticetop li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.bannerbg .bannercontent .notice .noticetop li:hover a {
+  color: red;
+}
+.bannerbg .bannercontent .notice .noticemiddle {
+  height: 140px;
+  border-bottom: 1px dashed #eaeaeb;
+  margin-bottom: 10px;
+}
+.bannerbg .bannercontent .notice .noticemiddle img {
+  width: 76px;
+  height: 76px;
+  margin: 5px 65px;
+}
+.bannerbg .bannercontent .notice .noticemiddle li {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #eb4445;
+  border-radius: 2px;
+  float: left;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  margin: 10px 18px 0 4px;
+}
+.bannerbg .bannercontent .notice .noticemiddle li a {
+  color: #eb4445;
+}
+.bannerbg .bannercontent .notice .noticemiddle .btncolor {
+  background: #eb4445;
+  margin: 10px 0px 0 18px;
+}
+.bannerbg .bannercontent .notice .noticemiddle .btncolor a {
+  color: white;
+}
+.bannerbg .bannercontent .notice .noticefoot {
+  height: 80px;
+  margin: 0 11px;
+}
+.bannerbg .bannercontent .notice .noticefoot .noticefleft {
+  height: 80px;
+  float: left;
+  width: 80px;
+  padding-right: 11px;
+  border-right: 1px solid #eaeaeb;
+}
+.bannerbg .bannercontent .notice .noticefoot .noticefleft li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.bannerbg .bannercontent .notice .noticefoot .noticefleft li a {
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  width: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #6b6b6c;
+}
+.bannerbg .bannercontent .notice .noticefoot .noticefleft li:hover a {
+  color: red;
+}
+.bannerbg .bannercontent .notice .noticefoot .noticefright {
+  width: 80px;
+  margin-left: 11px;
+  height: 80px;
+  float: right;
+}
+.bannerbg .bannercontent .notice .noticefoot .noticefright li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.bannerbg .bannercontent .notice .noticefoot .noticefright li a {
+  font-size: 12px;
+  line-height: 20px;
+  width: 60px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #6b6b6c;
+}
+.bannerbg .bannercontent .notice .noticefoot .noticefright li:hover a {
+  color: red;
+}
+
+.banner {
+  float: left;
+  width: 837px;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+.banner ul {
+  position: absolute;
+  left: -45px;
+  width: 1854px;
+}
+.banner ul li {
+  float: left;
+}
+.banner ul li img {
+  width: 927px;
+  height: 420px;
+}
+
+.contentbg {
+  width: 100%;
+  height: 4360px;
+  padding-top: 16px;
+  background: #f8f8f8;
+}
+.contentbg img {
+  cursor: pointer;
+}
+
+.infor {
+  height: 94px;
+  width: 1189px;
+  margin: 0 auto;
+}
+.infor li {
+  float: left;
+  padding-left: 100px;
+  padding-top: 27px;
+  width: 192px;
+  height: 67px;
+  margin-right: 4px;
+}
+.infor li span {
+  display: inline-block;
+  font-size: 22px;
+}
+
+.infor1 {
+  background: url(../img/tishi_a.png) no-repeat;
+}
+.infor1 span {
+  color: #c60a0a;
+}
+
+.infor2 {
+  background: url(../img/tishi_a.png) 0 -113px no-repeat;
+}
+.infor2 span {
+  color: #977ef0;
+}
+
+.infor3 {
+  background: url(../img/tishi_a.png) 0 -227px no-repeat;
+}
+.infor3 span {
+  color: #ceaa06;
+}
+
+.infor4 {
+  background: url(../img/tishi_a.png) 0 -343px no-repeat;
+  margin: 0;
+}
+.infor4 span {
+  color: #71cbb4;
+}
+
+.recom {
+  width: 1189px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.recom h3 {
+  width: 22px;
+  padding: 26px 14px;
+  font-size: 20px;
+  height: 100px;
+  float: left;
+  background: #c60a0a;
+  color: white;
+  font-weight: 600;
+}
+.recom ul {
+  float: left;
+}
+.recom ul li {
+  width: 280px;
+  height: 152px;
+  float: left;
+  margin-left: 4px;
+}
+.recom ul li img {
+  width: 280px;
+  height: 152px;
+}
+
+.cuspro {
+  width: 1189px;
+  height: 74px;
+  background: #fef4f4 url(../img/louc-1.png) no-repeat;
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+.cuspro ul {
+  margin-left: 92px;
+}
+.cuspro ul li {
+  margin-top: 12px;
+  padding-left: 21px;
+  float: left;
+  padding-right: 40px;
+  background: url(../img/lousc.png) right 0 no-repeat;
+  line-height: 26px;
+  font-size: 15px;
+}
+.cuspro ul li span {
+  color: #c60a0a;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+}
+.cuspro ul li:nth-of-type(5) {
+  background: none;
+}
+
+.stopro {
+  width: 1189px;
+  height: 74px;
+  background: #fef4f4 url(../img/louc-2.png) no-repeat;
+  margin: 0px auto;
+  margin-bottom: 19px;
+}
+.stopro ul {
+  margin-left: 92px;
+}
+.stopro ul li {
+  margin-top: 12px;
+  padding-left: 21px;
+  float: left;
+  padding-right: 40px;
+  background: url(../img/lousc.png) right 0 no-repeat;
+  line-height: 26px;
+  font-size: 15px;
+}
+.stopro ul li span {
+  color: #c60a0a;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+}
+.stopro ul li:nth-of-type(5) {
+  background: none;
+}
+
+.newest {
+  width: 1189px;
+  height: 850px;
+  background: #FFFFFF;
+  margin: 0 auto;
+}
+.newest .newesthead {
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 14px;
+  height: 42px;
+}
+.newest .newesthead span {
+  display: inline-block;
+  line-height: 42px;
+  float: left;
+}
+.newest .newesthead .newesttitle {
+  width: 144px;
+  margin: 0 46px;
+  float: left;
+}
+.newest .newesthead .newesttitle h4 {
+  background: url(../img/leave-1.png) no-repeat;
+  padding-left: 33px;
+  font-size: 19px;
+}
+.newest .newesthead .newesttitle p {
+  color: #9397a1;
+}
+.newest .newestProduct ul {
+  margin-top: 14px;
+}
+.newest .newestProduct ul li {
+  padding: 4px;
+  border: 1px solid #f4f4f4;
+  width: 220px;
+  height: 367px;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 7px;
+  position: relative;
+  overflow: hidden;
+}
+.newest .newestProduct ul li img {
+  width: 220px;
+  height: 225px;
+}
+.newest .newestProduct ul li p {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+}
+.newest .newestProduct ul li:hover {
+  padding: 0;
+  border: 5px solid #c60a0a;
+}
+
+.newestProductbtn {
+  width: 78px;
+  margin: 0 auto;
+  height: 26px;
+  border-radius: 4px;
+  margin-top: 56px;
+  background: #c60a0a;
+  text-align: center;
+  color: white;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.clothes, .daily, .fashion, .athlete {
+  width: 1189px;
+  height: 687px;
+  margin: 0 auto;
+  margin-bottom: 68px;
+  background: white;
+}
+.clothes img, .daily img, .fashion img, .athlete img {
+  width: 211px;
+  height: 211px;
+}
+.clothes ul, .daily ul, .fashion ul, .athlete ul {
+  width: 884px;
+  float: left;
+}
+.clothes li, .daily li, .fashion li, .athlete li {
+  width: 211px;
+  float: left;
+  height: 333px;
+  border: 1px solid #f4f4f4;
+  padding: 4px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+.clothes li .buyway, .daily li .buyway, .fashion li .buyway, .athlete li .buyway {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+}
+.clothes li:hover, .daily li:hover, .fashion li:hover, .athlete li:hover {
+  padding: 0;
+  border: 5px solid #c60a0a;
+}
+
+.clothes .clothesLeft {
+  float: left;
+  width: 302px;
+  height: 687px;
+}
+.clothes .clothesLeft img {
+  width: 302px;
+  height: 687px;
+}
+
+.daily .dailyLeft {
+  float: left;
+  width: 302px;
+  height: 687px;
+}
+.daily .dailyLeft img {
+  width: 302px;
+  height: 687px;
+}
+
+.fashion .fashionLeft {
+  float: left;
+  width: 302px;
+  height: 687px;
+}
+.fashion .fashionLeft img {
+  width: 302px;
+  height: 687px;
+}
+
+.athlete .athleteLeft {
+  float: left;
+  width: 302px;
+  height: 687px;
+}
+.athlete .athleteLeft img {
+  width: 302px;
+  height: 687px;
+}
+
+.proName {
+  margin-left: 9px;
+  margin-top: 13px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+}
+
+.price {
+  margin-left: 9px;
+  margin-top: 15px;
+  float: left;
+  font-size: 12px;
+  color: #666666;
+}
+
+.proNum {
+  margin-top: 15px;
+  float: right;
+  font-size: 12px;
+  color: #666666;
+}

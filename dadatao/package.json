@@ -1,0 +1,11 @@
+{
+  "name": "dadatao",
+  "version": "1.0.0",
+  "author": {
+    "name": "panxi"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.1"
+  }
+}
