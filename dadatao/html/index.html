@@ -9,11 +9,11 @@
 	<script type="text/html" id="productTemp">
 		<ul>
 			<% for(var i=0;i<8;i++){ %>
-				<li>
-					<img src="../img/new0.jpg"/>
-					<p class="proName">送小收纳盒做的先加</p>
-					<span class="price">￥134</span>
-					<p class="proNum">仅剩3件</p>
+				<li index= <%= data["product"][i]["id"] %> >
+					<img src=  <%= data["product"][i]["src"] %>/>
+					<p class="proName"><%= data["product"][i]["name"] %></p>
+					<span class="price"> ￥<%= data["product"][i]["price"][0] %> </span>
+					<p class="proNum">仅剩 <%= data["product"][i]["num"] %> 件</p>
 					<div class="newestProductbtn">免费试用</div>
 					<img src="../img/sech1.png" class="buyway"/>
 				</li>
@@ -57,8 +57,8 @@
 					<div class="noticemiddle">
 						<img src="../img/head9.jpg"/>
 						<ul>
-							<li class="btncolor"><a href="#">登录</a></li>
-							<li><a href="#">注册</a></li>
+							<li class="btncolor"><a href="login.html">登录</a></li>
+							<li><a href="register.html">注册</a></li>
 						</ul>
 					</div>
 					<div class="noticefoot">

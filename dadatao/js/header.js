@@ -12,6 +12,10 @@ define(["header"],function(){
 			$(".backtop").on("click",function(){
 				$("html").scrollTop(0);
 			});
+			$(".hmcon>img").on("click",function(){
+				//返回首页
+				window.location.href="../html/index.html";
+			});
 		});
-	})
+	});
 })

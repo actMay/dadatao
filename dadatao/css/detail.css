@@ -156,13 +156,135 @@ p {
   width: 300px;
   height: 300px;
   border: 1px solid gainsboro;
-  display: inline-block;
   margin-left: 10px;
   background-size: 800px 800px;
   background: url(../img/new7.jpg) no-repeat;
   overflow: hidden;
-  float: left;
   display: none;
+  position: absolute;
+  left: 540px;
+}
+.product .productcontent {
+  float: left;
+  margin-left: 44px;
+}
+.product .productcontent h3 {
+  font-size: 18px;
+  font-weight: 800;
+}
+.product .productcontent .pri li span {
+  display: inline-block;
+  margin-left: 44px;
+}
+.product .productcontent .pri li .pri1 {
+  color: #ff6c00;
+}
+.product .productcontent .pri li .pri2 {
+  font-size: 22px;
+  color: #666666;
+}
+.product .productcontent .pri li .pri3 {
+  color: #c60a0a;
+  font-size: 22px;
+}
+.product .productcontent .favour {
+  height: 26px;
+  width: 476px;
+}
+.product .productcontent .favour .pic1 {
+  width: 48px;
+  height: 24px;
+  border: 1px solid #c60a0a;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 2px;
+  float: left;
+  margin-right: 3px;
+  color: #c60a0a;
+}
+.product .productcontent .favour .pic2 {
+  float: left;
+  width: 80px;
+  height: 26px;
+  line-height: 26px;
+  background: #ff9191;
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+}
+.product .productcontent .favour .pic3 {
+  float: left;
+  height: 26px;
+  width: 64px;
+  line-height: 26px;
+  line-height: 26px;
+  background: #c60a0a;
+  margin-left: 3px;
+}
+.product .productcontent .favour .pic3 .picin {
+  width: 58px;
+  margin: 0 auto;
+  margin-top: 2px;
+  color: white;
+  line-height: 18px;
+  border: 1px solid white;
+  border-radius: 2px;
+  text-align: center;
+}
+.product .productcontent p {
+  color: #666666;
+  margin-top: 18px;
+}
+.product .productcontent img {
+  float: right;
+}
+.product .productcontent .type li {
+  margin-top: 27px;
+  color: #666666;
+}
+.product .productcontent .type li span {
+  display: inline-block;
+  margin-left: 44px;
+  color: #666666;
+  font-weight: 600;
+}
+.product .productcontent .popular {
+  margin-top: 22px;
+  border: 1px dashed #666666;
+  border-left: 0;
+  border-right: 0;
+  width: 366px;
+  height: 46px;
+}
+.product .productcontent .popular li {
+  color: #666666;
+  padding: 16px 10px;
+  border-right: 1px dashed #666666;
+  float: left;
+}
+.product .productcontent .popular li:nth-of-type(4) {
+  border: 0;
+}
+.product .productcontent .popular span {
+  color: #c60a0a;
+}
+.product .productcontent .proconbtn {
+  width: 168px;
+  height: 50px;
+  background: #c60a0a;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.product .more ul li {
+  padding-left: 30px;
+  width: 106px;
+  height: 18px;
+  float: left;
 }
 .product .about {
   width: 208px;
@@ -174,8 +296,12 @@ p {
   padding-top: 12px;
   line-height: 12px;
   margin-left: 20px;
-  margin-right: 26px;
   color: #8f8d8d;
+}
+.product .about li span {
+  display: inline-block;
+  margin-left: 26px;
+  color: #000000;
 }
 .product .about .shopsave {
   width: 190px;
@@ -206,7 +332,7 @@ p {
 }
 .product .about .anounnce {
   width: 190px;
-  height: 196px;
+  height: 204px;
   border-radius: 4px;
   border: 1px solid #a1a1a1;
   background: white;
@@ -225,9 +351,140 @@ p {
 }
 .product .about .anounnce p {
   width: 170px;
-  height: 143px;
+  height: 150px;
   margin: 0 auto;
   margin-top: 8px;
   line-height: 18px;
   font-size: 12px;
+}
+
+.other {
+  margin-top: 10px;
+  width: 1208px;
+  height: 996px;
+}
+.other .talk {
+  width: 970px;
+  height: 935px;
+  float: left;
+  position: relative;
+}
+.other .talk .talkhead {
+  width: 970px;
+  height: 42px;
+  border-bottom: 2px solid #c60a0a;
+}
+.other .talk .talkhead li {
+  width: 134px;
+  height: 40px;
+  border: 1px solid #e8e8e8;
+  line-height: 42px;
+  font-size: 17px;
+  text-align: center;
+  border-bottom: 0;
+  float: left;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.other .talk .talkhead .active {
+  background: #ffa9a9;
+  color: #c60a0a;
+}
+.other .talk .rule {
+  width: 970px;
+  height: 935px;
+  position: absolute;
+  background: white;
+  border: 1px solid #e9e9e9;
+  top: 58px;
+}
+.other .talk .rule .rulechild > li {
+  margin: 34px 50px;
+}
+.other .talk .rule .rulechild > li h4 {
+  padding-left: 18px;
+  height: 18px;
+  background: url(../img/ts-1.png) no-repeat;
+  font-weight: 600;
+  color: #c60a0a;
+  display: inline-block;
+  font-size: 18px;
+}
+.other .talk .rule .rulechild > li .icons {
+  background: url(../img/ts-1.png) 0 -16px no-repeat;
+}
+.other .talk .rule .rulechild > li p {
+  font-size: 16px;
+  line-height: 20px;
+}
+.other .talk .rule .rulechild > li li {
+  line-height: 32px;
+  font-size: 14px;
+  color: #515151;
+}
+.other .talk .rule .rulechild > li .colorred {
+  color: #c60a0a;
+}
+.other .talk .rule .rulechild > li .price2 {
+  color: #c60a0a;
+}
+.other .talk .rule .rulechild > li .price3 {
+  color: #c60a0a;
+}
+.other .talk .rule .rulefinal {
+  color: #c60a0a;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+}
+.other .talk .report {
+  width: 970px;
+  height: 935px;
+  position: absolute;
+  background: white;
+  border: 1px solid #e9e9e9;
+  display: none;
+  top: 58px;
+}
+.other .talk .testper {
+  width: 970px;
+  height: 935px;
+  position: absolute;
+  background: white;
+  border: 1px solid #e9e9e9;
+  display: none;
+  top: 58px;
+}
+.other .morepro {
+  float: right;
+  width: 212px;
+  height: 992px;
+  border: 1px solid #e9e9e9;
+}
+.other .morepro h4 {
+  height: 42px;
+  line-height: 42px;
+  width: 212px;
+  border-bottom: 1px solid #e9e9e9;
+  text-align: center;
+  color: #ff7c37;
+  font-size: 16px;
+  font-weight: 600;
+}
+.other .morepro li {
+  padding: 10px;
+  margin-top: 6px;
+  width: 190px;
+  height: 208px;
+  text-align: center;
+  cursor: pointer;
+}
+.other .morepro li img {
+  width: 190px;
+  height: 190px;
+}
+.other .morepro li p {
+  line-height: 18px;
+  font-size: 12px;
+  color: #6d6d6d;
 }
