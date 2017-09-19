@@ -1,6 +1,6 @@
 {"product":[
 	{"id":"0001","name":"针织衫打底衫长袖毛衣","price":["268.00","268.00","273.00"],"src":"../img/new0.jpg","num":4,"way":0,"sort":"服饰鞋包","shop":"淘宝","grade":4,"platform":"淘宝","bail":"819.00","activities":4,"focusperson":[110,1,1,2]},
-	{"id":"0002","name":"送一件T恤可信用卡花呗","price":["369.00","369.00","374.00"],"src":"../img/new1.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":5,"platform":"天猫","bail":"1870.00","activities":2,"focusperson":[686,19,5,0]},
+	{"id":"0002","name":"送一件T恤可信用卡花呗","price":["369.00","369.00","374.00"],"src":"../img/new1.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":5,"platform":"天猫","bail":"1870.00","activities":2,"focusperson":[686,19,5,0]},
 	{"id":"0003","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
 	{
 	"id":"0004",
@@ -9,7 +9,7 @@
 	"src":"../img/new3.jpg",
 	"num":5,
 	"way":0,
-	"sort":"服饰鞋包",
+	"sort":"居家日用",
 	"shop":"天猫",
 	"grade":4,
 	"platform":"天猫",
@@ -23,7 +23,7 @@
 	"src":"../img/new4.jpg",
 	"num":5,
 	"way":0,
-	"sort":"服饰鞋包",
+	"sort":"居家日用",
 	"shop":"天猫",
 	"grade":5,
 	"platform":"天猫",
@@ -51,7 +51,7 @@
 	"src":"../img/new6.jpg",
 	"num":5,
 	"way":0,
-	"sort":"服饰鞋包",
+	"sort":"居家日用",
 	"shop":"天猫",
 	"grade":3,
 	"platform":"天猫",
@@ -73,10 +73,28 @@
 	"activities":2,
 	"focusperson":[686,19,5,0]
 	},
-	{"id":"0009","name":"送一件T恤可信用卡花呗","price":["369.00","369.00","374.00"],"src":"../img/new8.jpg","num":5,"way":0,"sort":"clothes","shop":"天猫","grade":5,"platform":"天猫","bail":1870,"activities":2,"focusperson":[686,19,5,0]},
-	{"id":"0010","name":"送一件T恤可信用卡花呗","price":["369.00","369.00","374.00"],"src":"../img/new9.jpg","num":5,"way":0,"sort":"clothes","shop":"天猫","grade":5,"platform":"天猫","bail":1870,"activities":2,"focusperson":[686,19,5,0]}],
-"user":{
+	{"id":"0009","name":"送一件T恤可信用卡花呗","price":["369.00","369.00","374.00"],"src":"../img/new8.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":5,"platform":"天猫","bail":1870,"activities":2,"focusperson":[686,19,5,0]},
+	{"id":"0010","name":"送一件T恤可信用卡花呗","price":["369.00","369.00","374.00"],"src":"../img/new9.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":5,"platform":"天猫","bail":1870,"activities":2,"focusperson":[686,19,5,0]},
+	{"id":"0011","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0012","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0013","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0014","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0015","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0016","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0017","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0018","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0019","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0020","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0021","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0022","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0023","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0024","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0025","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]},
+	{"id":"0026","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4]}
+	],
+"user":[{
 	"tel":"13512345671",
 	"pass":"123456"
-}
+},{"tel":"13512345432",
+	"pass":"123456"}]
 }

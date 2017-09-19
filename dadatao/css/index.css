@@ -157,6 +157,11 @@ a:hover {
   height: 140px;
   border-bottom: 1px dashed #eaeaeb;
   margin-bottom: 10px;
+  text-align: center;
+}
+.bannerbg .bannercontent .notice .noticemiddle p {
+  width: 100px;
+  margin: 0 auto;
 }
 .bannerbg .bannercontent .notice .noticemiddle img {
   width: 76px;

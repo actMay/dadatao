@@ -3,6 +3,10 @@ require(["config"],function(){
 		$("#head").load("header.html");
 		$("#head").css({position:"relative",zIndex:300});
 		$("#foot").load("footer.html");
+		$(".sort li").on("click",function(){
+			window.location.href = "../html/sort.html"+"?sort="+$(".sort li").index($(this));
+		});
+		
 		//轮播图
 		var bannerTimer = setInterval(function(){
 			
@@ -24,7 +28,7 @@ require(["config"],function(){
 		$line.addClass("active");
 		$.ajax({
 			type:"get",
-			url:"../data.json",
+			url:"./../data.json",
 			async:true,
 			success:function(data){
 				$(".clothes").get(0).innerHTML+=temp("productTemp",data);
@@ -110,7 +114,7 @@ require(["config"],function(){
 					$li.attr("index",data["product"][i]["id"]);
 					$(".newestProduct>ul").append($li);
 				}
-//		
+		
 				
 			}
 		});
@@ -119,9 +123,27 @@ require(["config"],function(){
 		onload = function(){
 			$("li").on("click",function(){
 				if(!!$(this).attr("index")){
-					window.location.href = "../html/detail.html"+"?id="+$(this).attr("index");
+					window.location.href = "./detail.html"+"?id="+$(this).attr("index");
 				}
 			});
+			var user;
+			var strlist = document.cookie.split("; ");
+			for(var i=0;i<strlist.length;i++){
+				if(strlist[i].split("=")[0]==="user"){
+					user = strlist[i].split("=")[1];
+				}
+			}
+			if(!!user){
+				$(".noticemiddle ul").css({display:"none"});
+				user =user.substring(0,3).concat("****").concat(user.substring(7,10));
+					
+				console.log(user);
+				var $welcome = $("<p>欢迎您！尊敬的"+user+"用户"+"</p>");
+				$(".noticemiddle").append($welcome);
+				
+			}else{
+				$(".noticemiddle ul").css({display:"block"});
+			}
 		}
 		
 		

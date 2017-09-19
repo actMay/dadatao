@@ -41,7 +41,7 @@ require(["config"],function(){
 		var id = window.location.href.match(correctId)[0].substr(3,6);
 		$.ajax({
 			type:"get",
-			url:"../data.json",
+			url:"./../data.json",
 			async:true,
 			success:function(data){
 				var nowpro;
