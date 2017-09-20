@@ -136,8 +136,7 @@ require(["config"],function(){
 			if(!!user){
 				$(".noticemiddle ul").css({display:"none"});
 				user =user.substring(0,3).concat("****").concat(user.substring(7,10));
-					
-				console.log(user);
+
 				var $welcome = $("<p>欢迎您！尊敬的"+user+"用户"+"</p>");
 				$(".noticemiddle").append($welcome);
 				
