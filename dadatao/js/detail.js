@@ -87,12 +87,15 @@ require(["config"],function(){
 			if(!!val){
 				var produ = JSON.parse(val);
 				for(var i=0;i<produ.length;i++){
-					
 					if(produ[i]["id"]==id){
 						produ[i]["num"]++;
 						break;
 					}
-				};
+					if(i==(produ.length-1)){
+						produ.push({"id":id,"num":1});
+						break;
+					}
+				}
 				var str = JSON.stringify(produ);
 				document.cookie="val=" + str + "; expires=" + d + "; path=/";
 			}else{
@@ -104,7 +107,7 @@ require(["config"],function(){
 				};
 				value.push(produ);
 				var str = JSON.stringify(value);
-				document.cookie="val=" + str + "; expires=" + d + "; path=/";
+				document.cookie = "val=" + str + "; expires=" + d + "; path=/";
 			}
 		});
 		
