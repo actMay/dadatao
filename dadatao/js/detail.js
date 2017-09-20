@@ -74,7 +74,39 @@ require(["config"],function(){
 				$(".price3").text(nowpro["price"][2])
 			}
 		});
-		
+		$(".proconbtn").on("click",function(){
+			var d = new Date();
+			d.setDate(d.getDate()+7);
+			var val;
+			var strlist = document.cookie.split("; ");
+			for(var i=0;i<strlist.length;i++){
+				if(strlist[i].split("=")[0]==="val"){
+					val = strlist[i].split("=")[1];
+				}
+			}
+			if(!!val){
+				var produ = JSON.parse(val);
+				for(var i=0;i<produ.length;i++){
+					
+					if(produ[i]["id"]==id){
+						produ[i]["num"]++;
+						break;
+					}
+				};
+				var str = JSON.stringify(produ);
+				document.cookie="val=" + str + "; expires=" + d + "; path=/";
+			}else{
+				var value = [];
+				var produ = {};
+				produ = {
+					"id" : id,
+					"num" : 1
+				};
+				value.push(produ);
+				var str = JSON.stringify(value);
+				document.cookie="val=" + str + "; expires=" + d + "; path=/";
+			}
+		});
 		
 	});
 });

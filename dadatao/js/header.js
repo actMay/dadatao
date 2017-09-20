@@ -16,6 +16,9 @@ define(["header"],function(){
 				//返回首页
 				window.location.href="../html/index.html";
 			});
+			$(".hmcon button").on("click",function(){
+				window.location.href="../html/cart.html";
+			});
 		});
 	});
 })
