@@ -243,22 +243,53 @@ a:hover {
 
 .banner {
   float: left;
-  width: 837px;
+  width: 815px;
   height: 380px;
   overflow: hidden;
   position: relative;
 }
-.banner ul {
+.banner .pics {
   position: absolute;
-  left: -45px;
-  width: 1854px;
+  left: 0px;
+  width: 4075px;
 }
-.banner ul li {
+.banner .pics li {
   float: left;
 }
-.banner ul li img {
-  width: 927px;
-  height: 420px;
+.banner .pics li img {
+  width: 815px;
+  height: 380px;
+}
+.banner .pagePoint {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+.banner .pagePoint li {
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.banner .pagePoint li:nth-of-type(1) {
+  background: rgba(255, 0, 0, 0.5);
+}
+.banner .leftbtn {
+  position: absolute;
+  left: 30px;
+  top: 165px;
+  z-index: 99;
+  cursor: pointer;
+}
+.banner .rightbtn {
+  position: absolute;
+  right: 60px;
+  top: 165px;
+  z-index: 99;
+  cursor: pointer;
 }
 
 .contentbg {

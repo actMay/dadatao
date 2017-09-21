@@ -29,9 +29,11 @@ define(["config"],function(){
 					//console.log($(this).get(0).getAttribute("pass"));
 				});
 			});
-			$("input").eq(3).on("keyup",function(){
+			$("input").eq(3).on("blur",function(){
 				checkpass = ($("input").get(2).value == $("input").get(3).value);
-				
+				if(!checkpass){
+					$(this).after($span);
+				}
 			});
 			
 			$(".regbtn").on("click",function(){
@@ -42,11 +44,20 @@ define(["config"],function(){
 					}
 				});
 				if($(".check").attr("checked") == "checked" && res && checkpass){
-					console.log("验证成功");
+					
+					alert("验证成功");
+					
+					var realtel = $(".regcontent input").eq(0).get(0).value;
+					var relpass = $(".regcontent input").eq(2).get(0).value;
+					var d = new Date();
+					d.setDate(d.getDate()+7);
+					document.cookie = "user"+"="+realtel+";"+"expires="+d+";"+"path=/";
+					window.location.href="./index.html";
 				}else{
-					console.log("验证失败");
+					alert("验证失败");
 				}
 			});
-		})
+			
+		});
 	});
 });

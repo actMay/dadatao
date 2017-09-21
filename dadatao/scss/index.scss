@@ -191,22 +191,53 @@ $bannerheight : 380px;
 }
 .banner{
     float: left;
-    width: 837px;
+    width: 815px;
     height: $bannerheight;
     overflow: hidden;
     position: relative;
-    ul{
+    .pics{
         position: absolute;
-        left:-45px;
-        width: 1854px;
+        left:0px;
+        width: 4075px;
         li{
             float: left;
             img{
                 
-                width: 927px;
-                height:420px;
+                width: 815px;
+                height:380px;
             }
         }
+    }
+    .pagePoint{
+        position: absolute;
+        right: 40px;
+        bottom: 20px;
+        li{
+            width: 20px;
+            height: 20px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            float: left;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        li:nth-of-type(1){
+            background: rgba(255,0,0,0.5);
+        }
+    }
+    .leftbtn{
+        position: absolute;
+        left: 30px;
+        top:165px;
+        z-index: 99;
+        cursor: pointer;
+    }
+    .rightbtn{
+        position: absolute;
+        right: 60px;
+        top: 165px;
+        z-index: 99;
+        cursor: pointer;
     }
 }
 
