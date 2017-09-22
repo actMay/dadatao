@@ -15,9 +15,12 @@ require(["config"],function(){
 				$(".image").on("mousemove",function(e){
 					var magleft = e.clientX-$(".image").offset().left-$(".magnibox").get(0).offsetWidth/2;
 					var magtop = e.clientY-$("html").scrollTop()-$(".image").offset().top-$(".magnibox").height()/2;
-					$(".magnibox").css({left:Math.min($(".image").width()-$(".magnibox").width(),Math.max(0,magleft)),
-					top:Math.min($(".image").height()-$(".magnibox").height(),Math.max(0,e.clientY+$("html").scrollTop()-$(".image").offset().top-($(".magnibox").height())/2))});
+					
+					$(".magnibox").css({left:Math.min($(".image img").width()-$(".magnibox").width(),Math.max(0,magleft)),
+					top:Math.min($(".image img").height()-$(".magnibox").height(),Math.max(0,e.clientY+$("html").scrollTop()-$(".image").offset().top-($(".magnibox").height())/2))});
+					
 					$(".magni").css({backgroundPositionX:-$(".magnibox").get(0).offsetLeft*2,backgroundPositionY:-$(".magnibox").get(0).offsetTop*2});
+					
 				});
 			},
 			function(){
@@ -108,6 +111,7 @@ require(["config"],function(){
 				$(".pri span").eq(2).text(nowpro["price"][2]);
 				$(".about span").eq(1).text(nowpro["shop"]);
 				$(".about span").eq(2).text(nowpro["sort"]);
+				
 				$(".popular span").eq(0).text(nowpro["focusperson"][0]);
 				$(".popular span").eq(1).text(nowpro["focusperson"][1]);
 				$(".popular span").eq(2).text(nowpro["focusperson"][2]);
@@ -120,7 +124,8 @@ require(["config"],function(){
 				$(".about span").eq(4).text(nowpro["activities"]);
 				$(".shopsave span").text(nowpro["bail"]);
 				$(".price2").text(nowpro["price"][1]);
-				$(".price3").text(nowpro["price"][2])
+				$(".price3").text(nowpro["price"][2]);
+				$(".personfocus").text(nowpro["focusperson"][0]);
 			}
 		});
 		$(".proconbtn").on("click",function(){

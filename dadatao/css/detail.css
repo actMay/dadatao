@@ -154,13 +154,33 @@ p {
   position: absolute;
   display: none;
 }
+.product .more {
+  position: absolute;
+  top: 472px;
+  width: 500px;
+}
+.product .more ul li {
+  padding-left: 30px;
+  width: 106px;
+  height: 18px;
+  float: left;
+  color: #d5ba9f;
+}
+.product .more ul li:nth-of-type(1) {
+  background: url(../img/fxxx-1.png) no-repeat;
+}
+.product .more ul li:nth-of-type(2) {
+  background: url(../img/fxxx-1.png) 0 -18px no-repeat;
+}
+.product .more ul li:nth-of-type(3) {
+  background: url(../img/fxxx-1.png) 0 -36px no-repeat;
+}
 .product .magni {
   width: 300px;
   height: 300px;
   border: 1px solid gainsboro;
-  margin-left: 10px;
-  background-size: 800px 800px;
   background: url(../img/new7.jpg) no-repeat;
+  background-size: 800px 800px;
   overflow: hidden;
   display: none;
   position: absolute;
@@ -300,12 +320,6 @@ p {
   text-align: center;
   line-height: 50px;
   font-size: 20px;
-}
-.product .more ul li {
-  padding-left: 30px;
-  width: 106px;
-  height: 18px;
-  float: left;
 }
 .product .about {
   width: 208px;

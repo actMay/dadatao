@@ -22,11 +22,16 @@ define(["header"],function(){
 			var username;
 			var strlist = document.cookie.split("; ");
 			for(var i=0;i<strlist.length;i++){
-				if(strlist[i].split("=")[0]=="user"){
+				if(strlist[i].split("=")[0]=="user"&&!!strlist[i].split("=")[1]){
 					username = strlist[i].split("=")[1];
 					$(".out").remove();
 					$logout = $("<li class='fl'><a href='../html/login.html'>退出登录<a></li>")
 					$(".top li").eq(0).after($logout);
+					$logout.on("click",function(){
+						var d = new Date();
+						d.setDate(d.getDate()+7);
+						document.cookie = "user"+"="+""+";"+"expires="+d+";"+"path=/";
+					});
 				}
 			}
 			
