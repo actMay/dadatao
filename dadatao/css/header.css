@@ -126,14 +126,31 @@ a:hover {
 .headermiddle .hmcon .searchin {
   display: inline-block;
 }
-.headermiddle .hmcon .searchin input {
+.headermiddle .hmcon .searchin .searchinput {
+  float: left;
+}
+.headermiddle .hmcon .searchin .searchinput input {
   padding-left: 13px;
   float: left;
   width: 410px;
   height: 42px;
   border: 2px solid #c60a0a;
   margin-top: 40px;
-  font-size: 12px;
+  font-size: 16px;
+}
+.headermiddle .hmcon .searchin .searchinput ul {
+  margin-top: 82px;
+}
+.headermiddle .hmcon .searchin .searchinput ul li {
+  width: 403px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  background: white;
+  padding-left: 20px;
+}
+.headermiddle .hmcon .searchin .searchinput ul li:hover {
+  background: #E6E6E6;
 }
 .headermiddle .hmcon .searchin .btn {
   display: inline-block;

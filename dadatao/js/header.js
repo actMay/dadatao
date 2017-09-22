@@ -1,5 +1,6 @@
 define(["header"],function(){
 	require(["jquery"],function($){
+		
 		$(function(){
 			$(".qq").on("click",function(){
 				$(".qqhelp").css({display:"block"});
@@ -34,6 +35,32 @@ define(["header"],function(){
 					});
 				}
 			}
+			$(".query").on("keyup",function(){
+				$(".searchinput li").each(function(index,item){
+					item.remove();
+				});
+				var inp = $(this).val();
+				var _script = document.createElement("script");
+				_script.src = "http://suggestion.baidu.com/?cb=success&wd="+inp;
+				window["success"] = function(data){
+					var datas = data.s;
+					for(var i=0;i<datas.length;i++){
+						var $li = $("<li></li>");
+						$li.text(datas[i]);
+						$(".searchinput ul").append($li);
+					}
+					_script.remove();
+				}
+				document.body.appendChild(_script);
+			});
+			$(".searchinput ul").on("click",function(e){
+				if(e.target.nodeName == "LI"){
+					$(".query").val(e.target.innerText);
+					$(".searchinput li").each(function(index,item){
+						item.remove();
+					});
+				}
+			});
 			
 		});
 	});

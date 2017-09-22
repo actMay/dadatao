@@ -68,14 +68,31 @@ $width : 1189px;
         }
         .searchin{
             display: inline-block;
-            input{
-                padding-left: 13px;
+            .searchinput{
                 float: left;
-                width: 410px;
-                height: 42px;
-                border: 2px solid #c60a0a;
-                margin-top: 40px;
-                font-size: 12px;
+                input{
+                    padding-left: 13px;
+                    float: left;
+                    width: 410px;
+                    height: 42px;
+                    border: 2px solid #c60a0a;
+                    margin-top: 40px;
+                    font-size: 16px;
+                }
+                ul{
+                    margin-top: 82px;
+                    li{
+                        width: 403px;
+                        height: 30px;
+                        font-size: 16px;
+                        line-height: 30px;
+                        background: white;
+                        padding-left: 20px;
+                    }
+                    li:hover{
+                        background: #E6E6E6;
+                    }
+                }
             }
             .btn{
                 display: inline-block;
