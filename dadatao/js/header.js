@@ -20,6 +20,7 @@ define(["header"],function(){
 			$(".hmcon button").on("click",function(){
 				window.location.href="../html/cart.html";
 			});
+			//获取cookie中数据，判断是否有用户
 			var username;
 			var strlist = document.cookie.split("; ");
 			for(var i=0;i<strlist.length;i++){
@@ -35,6 +36,7 @@ define(["header"],function(){
 					});
 				}
 			}
+			//搜索框
 			$(".query").on("keyup",function(){
 				$(".searchinput li").each(function(index,item){
 					item.remove();

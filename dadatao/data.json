@@ -1,7 +1,7 @@
 {"product":[
 	{"id":"0001","name":"针织衫打底衫长袖毛衣","price":["268.00","268.00","273.00"],"src":"../img/new0.jpg","num":4,"way":0,"sort":"服饰鞋包","shop":"淘宝","grade":4,"platform":"淘宝","bail":"819.00","activities":4,"focusperson":[110,1,1,2],"time":"2017-09-26"},
 	{"id":"0002","name":"送一件T恤可信用卡花呗","price":["369.00","369.00","374.00"],"src":"../img/new1.jpg","num":5,"way":0,"sort":"居家日用","shop":"天猫","grade":5,"platform":"天猫","bail":"1870.00","activities":2,"focusperson":[686,19,5,0],"time":"2017-09-26"},
-	{"id":"0003","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4],"time":"2017-09-22 16:51:05"},
+	{"id":"0003","name":"送网布鞋","price":["79.00","79.00","79.00"],"src":"../img/new2.jpg","num":5,"way":0,"sort":"服饰鞋包","shop":"天猫","grade":3,"platform":"天猫","bail":"790.00","activities":1,"focusperson":[312,14,6,4],"time":"2017-09-23 16:20:05"},
 	{
 	"id":"0004",
 	"name":"送万圣节儿童披风+1元红包",

@@ -3,11 +3,15 @@ require(["config"],function(){
 	require(["jquery","header"],function($){
 		var timeover = false;
 		$("#head").load("header.html");
-		$("#head").css({position:"relative",zIndex:300});
 		$("#foot").load("footer.html");
-		//放大镜效果
-		$(function(){
+		onload = function(){
+		$("#head").css({position:"relative",zIndex:300});
 			
+			
+			
+			
+			
+			//放大镜效果
 			$(".image").hover(function(){
 				$(".magnibox").css({display:"block"});
 				$(".magni").css({display:"block"});
@@ -30,35 +34,81 @@ require(["config"],function(){
 			
 			
 			
-			var remaintimer = setInterval(function(){
-				
-				$(".remainsecond").text(Number($(".remainsecond").text())-1);
-				if(Number($(".remainsecond").text())<0){
-					if(Number($(".remainminute").text())>0){
-						$(".remainsecond").text(59);
-						$(".remainminute").text(Number($(".remainminute").text())-1);
-					}else{
-						if(Number($(".remainhour").text())>0){
-							$(".remainminute").text(59);
-							$(".remainhour").text(Number($(".remainhour").text())-1);
-						}else{
-							if(Number($(".remainday").text())>0){
-								$(".remainhour").text(23);
-								$(".remainday").text(Number($(".remainday").text())-1);		
-							}else{
-								timeover = true;
-								$(".proconbtn").css({background:"gray"});
-								$(".proconbtn").text("活动结束");
-								$(".remainsecond").text(0);
-								clearInterval(remaintimer);
+			
+			
+			
+			//添加商品按钮
+			$(".proconbtn").on("click",function(){
+				if(!timeover){
+					var d = new Date();
+					d.setDate(d.getDate()+7);
+					var val;
+					var strlist = document.cookie.split("; ");
+					for(var i=0;i<strlist.length;i++){
+						if(strlist[i].split("=")[0]==="val"){
+							val = strlist[i].split("=")[1];
+						}
+					}
+					if(!!val){
+						var produ = JSON.parse(val);
+						for(var i=0;i<produ.length;i++){
+							if(produ[i]["id"]==id){
+								produ[i]["num"]++;
+								break;
 							}
+							if(i==(produ.length-1)){
+								produ.push({"id":id,"num":1});
+								break;
+							}
+						}
+						var str = JSON.stringify(produ);
+						document.cookie="val=" + str + "; expires=" + d + "; path=/";
+					}else{
+						var value = [];
+						var produ = {};
+						produ = {
+							"id" : id,
+							"num" : 1
+						};
+						value.push(produ);
+						var str = JSON.stringify(value);
+						document.cookie = "val=" + str + "; expires=" + d + "; path=/";
+					}
+					$box = $("<div class='box'>+1</div>");
+					$(".proconbtn").append($box);
+					$box.animate({left:"600px",top:"-550px",width:"0px",height:"0px"},1500);
+					
+				}
+			});
+			
+		}
+		//倒计时功能
+		var remaintimer = setInterval(function(){
+			
+			$(".remainsecond").text(Number($(".remainsecond").text())-1);
+			if(Number($(".remainsecond").text())<0){
+				if(Number($(".remainminute").text())>0){
+					$(".remainsecond").text(59);
+					$(".remainminute").text(Number($(".remainminute").text())-1);
+				}else{
+					if(Number($(".remainhour").text())>0){
+						$(".remainminute").text(59);
+						$(".remainhour").text(Number($(".remainhour").text())-1);
+					}else{
+						if(Number($(".remainday").text())>0){
+							$(".remainhour").text(23);
+							$(".remainday").text(Number($(".remainday").text())-1);		
+						}else{
+							timeover = true;
+							$(".proconbtn").css({background:"gray"});
+							$(".proconbtn").text("活动结束");
+							$(".remainsecond").text(0);
+							clearInterval(remaintimer);
 						}
 					}
 				}
-			},1000);
-			
-		})
-		
+			}
+		},1000);
 		
 		$(".talkhead li").on("click",function(){
 			$(this).addClass("active").siblings().removeClass("active");
@@ -66,6 +116,7 @@ require(["config"],function(){
 			$(".talk>div").eq(sort).css({display:"block"}).siblings().css({display:"none"});
 			$(this).parent().css({display:"block"});	
 		})
+		
 		var correctId = /id=\w{4}/;
 		var id = window.location.href.match(correctId)[0].substr(3,6);
 		$.ajax({
@@ -80,6 +131,7 @@ require(["config"],function(){
 						break;
 					}
 				}
+				//时钟初始化
 				var remainsecond = parseInt((Date.parse(nowpro["time"])- new Date().getTime())/1000);
 				var showsecond = remainsecond%60;
 				var remainminute = parseInt(remainsecond/60);
@@ -102,6 +154,7 @@ require(["config"],function(){
 					$(".proconbtn").css({background:"gray"});
 					$(".proconbtn").text("活动结束");
 				}
+				//从json中获取数据，填入详情页
 				$(".image>img").attr("src",nowpro["src"]);
 				$(".magni").css({"backgroundImage":"url("+nowpro['src']+")"});
 				$(".productcontent>h3").text(nowpro["name"]);
@@ -128,47 +181,6 @@ require(["config"],function(){
 				$(".personfocus").text(nowpro["focusperson"][0]);
 			}
 		});
-		$(".proconbtn").on("click",function(){
-			if(!timeover){
-				var d = new Date();
-				d.setDate(d.getDate()+7);
-				var val;
-				var strlist = document.cookie.split("; ");
-				for(var i=0;i<strlist.length;i++){
-					if(strlist[i].split("=")[0]==="val"){
-						val = strlist[i].split("=")[1];
-					}
-				}
-				if(!!val){
-					var produ = JSON.parse(val);
-					for(var i=0;i<produ.length;i++){
-						if(produ[i]["id"]==id){
-							produ[i]["num"]++;
-							break;
-						}
-						if(i==(produ.length-1)){
-							produ.push({"id":id,"num":1});
-							break;
-						}
-					}
-					var str = JSON.stringify(produ);
-					document.cookie="val=" + str + "; expires=" + d + "; path=/";
-				}else{
-					var value = [];
-					var produ = {};
-					produ = {
-						"id" : id,
-						"num" : 1
-					};
-					value.push(produ);
-					var str = JSON.stringify(value);
-					document.cookie = "val=" + str + "; expires=" + d + "; path=/";
-				}
-				$box = $("<div class='box'>+1</div>");
-				$(".proconbtn").append($box);
-				$box.animate({left:"600px",top:"-550px",width:"0px",height:"0px"},1500);
-				
-			}
-		});
+		
 	});
 });

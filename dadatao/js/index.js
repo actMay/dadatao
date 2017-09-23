@@ -1,15 +1,11 @@
 require(["config"],function(){
 	require(["jquery","temp","header"],function($,temp){
-		$("#head").load("header.html");
-		$("#head").css({position:"relative",zIndex:300});
-		$("#foot").load("footer.html");
-		$(".sort li").on("click",function(){
-			window.location.href = "../html/sort.html"+"?sort="+$(".sort li").index($(this));
-		});
+		
 		var imgNum = $(".pics li").length;
 		var pause = true;
 		var startpage = 0;
 		//轮播图
+		//下一页
 		function nextpage(){
 			startpage++;
 			if(startpage>=imgNum){
@@ -21,6 +17,7 @@ require(["config"],function(){
 				$(".pagePoint li").eq(startpage).css({background:"rgba(255,0,0,0.5)"}).siblings().css({background:"rgba(0,0,0,0.5)"});
 			}
 		}
+		//前一页
 		function prevpage(){
 			startpage--;
 			if(startpage<0){
@@ -32,9 +29,11 @@ require(["config"],function(){
 				$(".pics").css({left:-startpage*$(".pics li").eq(0).width()});
 			}
 		}
+		//左边按钮点击事件
 		$(".leftbtn").on("click",function(e){
 			prevpage();
 		});
+		//右边按钮点击事件
 		$(".rightbtn").on("click",function(e){
 			nextpage();
 		});
@@ -49,7 +48,15 @@ require(["config"],function(){
 				nextpage();
 			}
 		},2000);
-
+		
+		
+		
+		$("#head").load("header.html");
+		$("#head").css({position:"relative",zIndex:300});
+		$("#foot").load("footer.html");
+		$(".sort li").on("click",function(){
+			window.location.href = "../html/sort.html"+"?sort="+$(".sort li").index($(this));
+		});
 		$line = $("<div></div>");
 		$line.css({position:"absolute",left:0,top:"350px",width:"350px",height:"350px",background:"url(../img/line.png) no-repeat"});
 		$line.addClass("active");

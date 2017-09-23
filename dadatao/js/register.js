@@ -3,6 +3,7 @@ define(["config"],function(){
 	require(["jquery"],function($){
 		$(function(){
 			var checkpass;
+			//策略模式，所有可能需要的条件
 			var regular={
 				"tel" : /^1[3|5|8|7|4][1-9]{9}$/, 
 				"mail" : /.{6,20}/,
@@ -43,7 +44,7 @@ define(["config"],function(){
 						res = false;
 					}
 				});
-				if($(".check").attr("checked") == "checked" && res && checkpass){
+				if($(".check").get(0).checked == true && res && checkpass){
 					
 					alert("验证成功");
 					

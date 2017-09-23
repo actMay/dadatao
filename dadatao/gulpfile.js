@@ -21,11 +21,16 @@ var connect = require("gulp-connect");//热部署（即时刷新）
 //   gulp.src("./html/header.html").pipe(connect.reload());
 //});
 //
-//gulp.task("toEs",function(){
-//	gulp.src("js/jquery.js").pipe(babel({
-//		presets : ["es2015"]
-//	})).pipe(gulp.dest("./minjs/"))
-//})
+
+gulp.task("js",function(){
+     gulp.src("js/*.js").pipe(uglify()).pipe(gulp.dest("minjs"));
+})
+
+gulp.task("toEs",function(){
+	gulp.src("js/*.js").pipe(babel({
+		presets : ["es2015"]
+	})).pipe(gulp.dest("./minjs/"))
+})
 
 //处理html
 gulp.task("refreshHTML",function(){
